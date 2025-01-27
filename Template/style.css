@@ -1,9 +1,10 @@
-h1{
+
+h1 {
+    color: white;
     font-size: 48px;
     text-align: center;
 }
-
-.webgl{
+.webgl {
     position: absolute;
     top: 0;
     left: 0;
