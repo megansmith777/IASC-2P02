@@ -6,7 +6,7 @@ import * as THREE from "three"
 const canvas = document.querySelector('.webgl')
 // Scene
 const scene = new THREE.Scene()
-scene.background = new THREE.Color('gray')
+scene.background = new THREE.Color('#E7F0FF')
 // Camera
 const camera = new THREE.PerspectiveCamera(
     75,
