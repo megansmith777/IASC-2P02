@@ -1,4 +1,15 @@
 import * as THREE from "three"
+
+/***********
+** SETUP **
+************/
+//Sizes
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    aspectRatio: window.innerWidth / window.innerHeight
+}
+
 /***********
  ** SCENE ** 
  ***********/
