@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment 1</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- three.js importmap -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://ga.jspm.io/npm:three@0.168.0/build/three.module.js",
+            "OrbitControls": "https://ga.jspm.io/npm:three@0.168.0/examples/jsm/controls/OrbitControls.js",
+            "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.2/dist/lil-gui.esm.js"
+          }
+        }
+        </script>
+
+    <!-- three.js scene -->
+    <script src="script.js" type="module"></script>
+
+</head>
+<body>
+  <div class="flexbox">
+    <!-- ESSAY -->
+    <div class="essay">
+     <h2>1. Flatness</h2>
+     <p><span class="clickable" id="part-one">From inside the cave...</span></p>
+
+     <p>The people in the cave see only what is projected onto the wall infront of them. Their entire understanding of reality is based on these shifting, passing figures that flicker and dance in the dim glow of the fire behind them. They do not see the source of the shapes, only their silhouettes.<span class="clickable" id="first-change">When one of the figures begins to rise and fall,</span>they don't interpret it as an object moving in three-dimensional space. To them, the shadow itself is changing its nature, perhaps growing and shrinking, or even attempting to lift itself from the ground. When another shadow <span class="clickable" id="second-change">stretches sideways and vanishes off the wall,</span></span>panic sets in among those in the cave. If something can disappear from view, does that mean it has fallen off the edge of existence? Their world is bounded by the edges of the wall, and anything beyond it is unknowable. They construct stories to explain these changes, making sense of them within the only framework they have; a two-dimensional interpretation of an unseen three-dimensional reality. </p>
+    
+
+     <p>Nick Sousanis introduces the concept of Flatness in <i>Unflattening</i> as a limitation of perspective — a state where one's understanding of reality is confined to a singular, unquestioned viewpoint. To me, Flatness is the inability to perceive alternative dimensions of knowledge and experience; it is the tendency to mistake a small fraction of existence for its entirety. The people in the cave live within this state of Flatness. They accept the shadows as the only truth because they lack the ability to conceive of a reality beyond them. Their interpretations are restricted to what is immediately visible, and they cannot believe that these shapes are mere distortions of real objects in a space they have never encountered. Their worldview is Flat because it is unchallenged and unexamined, bound by the limits of their experience rather than the possibilities beyond it. This mirrors the way in which individuals or societies can remain trapped in narrow ways of thinking, unable to step outside of their inherited perspectives to see a broader, more complex reality. </p>
+
+     <h2>2. Seeing Double</h2>
+     <p><span class="clickable" id="part-two">From outside the cave...</span></p>
+
+     <p>Stepping outside the cave, the world expands. The figures that cast the shadows are now visible, and the light source that creates them can be seen directly. A large torus, once just a flickering shape on the cave wall, now appears in full form. Its solid mass catches the light, and as the sun shifts across the sky, the shadows stretch and shrink in response. The people outside the cave understand that the shadows are not independent entities but mere projections caused by objects in the real world. As the sun begins to set,  <span class="clickable" id="third-change">the shadows rise higher on the cave wall, lengthening as the angle of the light changes</span>. Meanwhile, one of the objects outside the cave begins to move, shifting its shadow across the wall. The people inside the cave may think the shadow is acting of its own accord, but those outside can clearly see that  <span class="clickable" id="fourth-change">the object itself is simply being moved.</span>.</span></p>
+
+     <p>Sousanis's concept of Seeing Double is about perceiving multiple layers of reality at once — being able to see both the limited perspective and the larger truth beyond it. The people outside the cave experience Seeing Double because they understand how the world inside the cave is shaped by external forces. While those inside the cave see a shadow moving up the wall and interpret it as an object falling off the Earth, those outside recognize that it is simply a result of the sun setting. The two groups exist in separate realities, yet their experiences are connected. One perspective does not negate the other, but the people outside the cave have a more complete understanding. This ability to hold multiple viewpoints at once—to see both the representation and the source, both the shadow and the object—is what <i>Unflattening</i> argues is necessary for true understanding.</p>
+    </div>
+    <!-- SCENE -->
+    <div class="scene">
+        <canvas class="webgl"></canvas>
+      </div>
+    </div>
+  </body>
