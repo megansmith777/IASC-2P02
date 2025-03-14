@@ -133,12 +133,8 @@ const findSearchTermInTokenizedText = (term, color) =>
     // Use a for loop to go through the tokenizedText array
     for (let i = 0; i < tokenizedText.length; i++)
     {
-        // If tokenizedText[i] matches our searchTerm, then we draw a cube
         if(tokenizedText[i] === term){
-            // convert i into height, which is a value between 0 and 20
             const height = (100 / tokenizedText.length) * i * 0.2
-
-            // call drawCube function 100 times using converted height value
             for(let a = 0; a < 100; a++)
             {
                 drawCube(height, color)
@@ -149,10 +145,6 @@ const findSearchTermInTokenizedText = (term, color) =>
 
 
 tokenizeSourceText()
-//findSearchTermInTokenizedText("little", "yellow")
-//findSearchTermInTokenizedText("dog", "pink")
-//findSearchTermInTokenizedText("dogs", "pink")
-
 findSearchTermInTokenizedText("spring", "#dd9ac2")
 findSearchTermInTokenizedText("breeze", "#62b6cb")
 findSearchTermInTokenizedText("sun", "#fc9e4f")
