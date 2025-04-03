@@ -128,24 +128,24 @@ const drawMesh = (height, params) => {
   let zOffset = 0;
 
   if (params.triangle) {
-    xOffset = -2; // More spread out
+    xOffset = -2;
     zOffset = -2;
   } else if (params.ring) {
     xOffset = 0;
     zOffset = 0;
   } else if (params.heart) {
-    xOffset = 2; // More spread out
+    xOffset = 2;
     zOffset = 2;
   }
 
-  mesh.position.x = (Math.random() - 0.5) * params.diameter * 2 + xOffset; // Even more spread
-  mesh.position.z = (Math.random() - 0.5) * params.diameter * 2 + zOffset; // Even more spread
-  mesh.position.y = height - 10;
+  mesh.position.x = (Math.random() - 0.5) * params.diameter * 2 + xOffset;
+  mesh.position.z = (Math.random() - 0.5) * params.diameter * 2 + zOffset;
+  mesh.position.y = height * 1.5 - 10; // Increased height separation
 
   // Scale mesh
   let scale = params.scale;
   if (params.heart) {
-    scale = 0.5; // Set scale to 0.5 for hearts
+    scale = 0.5;
   }
   mesh.scale.x = scale;
   mesh.scale.y = scale;
@@ -309,3 +309,4 @@ const animation = () => {
 };
 
 animation();
+
